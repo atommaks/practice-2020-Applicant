@@ -35,7 +35,6 @@ public class AddUserForm {
                     });
                     frame.dispose();
                 } catch (java.sql.SQLException e1){
-                    e1.printStackTrace();
                 }
             }
         });

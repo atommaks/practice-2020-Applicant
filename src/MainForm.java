@@ -206,7 +206,6 @@ public class MainForm {
             st.close();
             resultSet.close();
         } catch (java.sql.SQLException e){
-            e.printStackTrace();
         }
     }
 
@@ -359,7 +358,6 @@ public class MainForm {
             }
 
         } catch (java.sql.SQLException e1){
-            e1.printStackTrace();
         }
     }
 
@@ -390,7 +388,6 @@ public class MainForm {
             statement.close();
             resultSet.close();
         } catch (java.sql.SQLException e){
-            e.printStackTrace();
         }
 
         try{
@@ -402,7 +399,6 @@ public class MainForm {
             statement.close();
             resultSet.close();
         } catch (java.sql.SQLException e){
-            e.printStackTrace();
         }
 
         DefaultCellEditor userEditor = new DefaultCellEditor(usersCombo), statusEditor = new DefaultCellEditor(statusCombo), executorEditor = new DefaultCellEditor(executorCombo);
@@ -552,7 +548,6 @@ public class MainForm {
                         statement.close();
                         resultSet.close();
                     } catch (java.sql.SQLException e1){
-                        e1.printStackTrace();
                     }
                 }
             });
@@ -643,7 +638,6 @@ public class MainForm {
                     statement.close();
                     resultSet.close();
                 } catch (java.sql.SQLException e){
-                    e.printStackTrace();
                 }
             } else if (!u && !d){
                 fillTable();
@@ -658,7 +652,6 @@ public class MainForm {
                     userTableModel.addRow(new Object[]{resultSet.getString("name"), resultSet.getString("department"), resultSet.getString("password")});
                 }
             } catch (java.sql.SQLException e1){
-                e1.printStackTrace();
             }
 
         }

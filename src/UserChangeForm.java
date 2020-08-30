@@ -49,7 +49,6 @@ public class UserChangeForm {
                         b = 1;
                     statement.addBatch("update orders set axapta = " + b + " where order_id = " + order_id);
                 } catch (java.sql.SQLException e1){
-                    e1.printStackTrace();
                 }
             }
         });

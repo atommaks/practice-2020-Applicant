@@ -40,7 +40,6 @@ public class AuthorizationForm {
                     resultSet.close();
                 }catch (java.sql.SQLException | java.lang.NullPointerException e1){
                     JOptionPane.showMessageDialog(null, e1.getMessage());
-                    e1.printStackTrace();
                 }
             }
         });
